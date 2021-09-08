@@ -4,7 +4,6 @@ permalink: "/about/"
 layout: page
 ---
 
-# About me
 <hr style="margin: -0.1em 0 !important;">
 Hi, i am **chob**, i'm a researcher on malware and exploitation vectors. In my free time I tend to play with my cats.
 # About this blog
