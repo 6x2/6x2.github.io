@@ -22,7 +22,7 @@ As you can see from the complilation above, they believed we had a apparent "ip 
 
 Now that you understand the context before the main pwn; without further ado, let's get into the main pwn. On August 16, 2021, we discovered a 0day **no-auth** full account takeover on Animal Jam. How? simple. A fucking password reset endpoint. Let me repeat that, a fucking **password reset endpoint**, someone must've been some crack while writing the endpoint lol (╯°□°）╯︵ ┻━┻.
 
-***
+****
 # Discovering the vulnerability
 Basically, one of our researchers used Fiddler to capture all the traffic coming from the Animal Jam application because he was capturing all the traffic he managed to come across the `/disable` endpoint. Every account on Animal Jam is linked to a certain "parent account", and since he got the endpoint for `/disable` he was able to look at the post data (the data that is sent with the post request) he noticed on the post data you were able to send a custom email in the post data so he replaced the email, not expecting anything until.. he recieved a email from Animal Jam and funny enough, once he clicked on the disable account link, it automatically overrided the email that is already linked to the account with the custom email you put in.
 
@@ -31,7 +31,7 @@ Basically, one of our researchers used Fiddler to capture all the traffic coming
 Only issue with this is that it didn't disable the player, but knowing it did link the account, he searched for other endpoints using Fiddler that had the same post data requirements, until.. he found the `/send_password_reset` endpoint and by sending the request he was able to takeover ANY players account by sending a post request with the generosity with of course, no authentication at all. He then alerted us about this and showed it wasn't a joke on a screenshare.
 
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/meme.jpg" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/meme.jpg"></a>
-***
+****
 
 # Mass Exploitation
 Now we know the vulnerability, how do we use it on a large scale attack? Simple! All we need to do is write a script to send a post request with the post data and the target with a burner email.
@@ -73,7 +73,7 @@ Although it was patched due to the security advisory we released the next day be
 
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif" target="_blank"><img class="centerImgSmall" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif"></a>
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.png" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.png"></a>
-***
+****
 
 # Conclusion
 hey! thank you reading if you got this far, as this is my first blog I've made. I will be making other blogs like this very soon, stay tuned!
