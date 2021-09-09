@@ -77,4 +77,5 @@ Although it was patched due to the security advisory we released the next day be
 ****
 # Conclusion
 This company "Animal Jam" is a example of greed over good security, if any companies are reading this, don't be like these guys, but hey,
-thank you for reading if you got this far, this is my first blog i've made and I'll be making more very soon and this was funny fun to make (ﾟДﾟ)y─┛~~ 
+thank you for reading if you got this far, this is my first blog i've made and I'll be making more very soon and this was funny fun to make <br>
+(ﾟДﾟ)y─┛~~ 
