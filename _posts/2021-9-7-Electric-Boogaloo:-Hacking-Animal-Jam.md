@@ -66,14 +66,14 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-and **PWNED**!! Now you can takeover anyones account just by supplying the username and a burner email lol.
+and **PWNED**!! Now you can takeover anyones account just by supplying the username and a burner email lol. <br>
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/beamed.png" target="_blank"><img class="centerImgSmall" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/beamed.png"></a>
 
 Although it was patched due to the security advisory we released the next day because Animal Jam was having some issues making a patch lol, here's a gif & a image of us on the AJHQ account on the parents dashboard using this exploit.
 
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif" target="_blank"><img class="centerImgSmall" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif"></a>
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.png" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.png"></a>
-
+<br>
 ****
 # Conclusion
 This company "Animal Jam" is a example of greed over good security, if any companies are reading this, don't be like these guys, but hey,
