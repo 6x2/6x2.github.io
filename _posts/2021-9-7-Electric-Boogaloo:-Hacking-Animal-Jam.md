@@ -31,8 +31,8 @@ Basically, one of our researchers used Fiddler to capture all the traffic coming
 Only issue with this is that it didn't disable the player, but knowing it did link the account, he searched for other endpoints using Fiddler that had the same post data requirements, until.. he found the `/send_password_reset` endpoint and by sending the request he was able to takeover ANY players account by sending a post request with the generosity with of course, no authentication at all. He then alerted us about this and showed it wasn't a joke on a screenshare.
 
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/meme.jpg" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/meme.jpg"></a>
-****
 
+****
 # Mass Exploitation
 Now we know the vulnerability, how do we use it on a large scale attack? Simple! All we need to do is write a script to send a post request with the post data and the target with a burner email.
 
@@ -66,14 +66,14 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-and **PWNED**! Now you can takeover anyones account just by supplying the username and a burner email lol.
+and **PWNED**!! Now you can takeover anyones account just by supplying the username and a burner email lol.
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ez.jpg" target="_blank"><img class="centerImgSmall" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ez.jpg"></a>
 
 Although it was patched due to the security advisory we released the next day because Animal Jam was having some issues making a patch lol, but here's a gif & a image of us on the AJHQ account on the parents dashboard using this exploit.
 
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif" target="_blank"><img class="centerImgSmall" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif"></a>
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.png" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.png"></a>
-****
 
+****
 # Conclusion
 hey! thank you reading if you got this far, as this is my first blog I've made. I will be making other blogs like this very soon, stay tuned!
