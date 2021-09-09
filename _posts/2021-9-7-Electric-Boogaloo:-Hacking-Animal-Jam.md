@@ -22,7 +22,7 @@ As you can see from the complilation above, they believed we had a apparent "ip 
 
 Now that you understand the context before the main pwn; without further ado, let's get into the main pwn. On August 16, 2021, we discovered a 0day **no-auth** full account takeover on Animal Jam. How? simple. A fucking password reset endpoint. Let me repeat that, a fucking **password reset endpoint**, someone must've been some crack while writing the endpoint lol (╯°□°）╯︵ ┻━┻.
 ***
-# Discovering the 0day
+# Discovering the vulnerability
 Basically, one of our researchers used Fiddler to capture all the traffic coming from the Animal Jam application because he was capturing all the traffic he managed to come across the `/disable` endpoint. Every account on Animal Jam is linked to a certain "parent account", and since he got the endpoint for `/disable` he was able to look at the post data (the data that is sent with the post request) he noticed on the post data you were able to send a custom email in the post data so he replaced the email, not expecting anything until.. he recieved a email from Animal Jam and funny enough, once he clicked on the disable account link, it automatically overrided the email that is already linked to the account with the custom email you put in.
 
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/lawl.gif" target="_blank"><img class="centerImgSmall" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/lawl.gif"></a>
