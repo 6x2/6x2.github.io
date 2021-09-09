@@ -39,6 +39,7 @@ Now we know the vulnerability, how do we use it on a large scale attack? Simple!
 ### - Writing the exploit using python3
 Lets start by making a Python script and then importing the request library for sending the post request and sys for argument handling and then supplying the endpoint with the request:
 ```python
+#!/usr/env/python3
 import requests
 import sys
 
@@ -70,4 +71,8 @@ and **PWNED**! Now you can takeover anyones account just by supplying the userna
 Although it was patched due to the security advisory we released the next day because Animal Jam was having some issues making a patch lol, but here's a gif & a image of us on the AJHQ account on the parents dashboard using this exploit.
 
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif" target="_blank"><img class="centerImgSmall" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.gif"></a>
-<a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.jpg" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.jpg"></a>
+<a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.png" target="_blank"><img class="centerImgLarge" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/ajhq.png"></a>
+***
+
+# Conclusion
+hey! thank you reading if you got this far, as this is my first blog I've made. I will be making other blogs like this very soon, stay tuned!
