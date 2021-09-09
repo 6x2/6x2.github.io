@@ -17,8 +17,7 @@ As the title suggests, this post will touch on how me and a few other junior sec
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/compilation.png" target="_blank"><img class="centerImgMedium" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/compilation.png"></a>
 
 As you can see from the complilation above, they believed we had a apparent "ip logger" and other malicious items, this gave us a notorious reputation as this group of 40 year olds in their mother's basement that are very **1337**, which was not the case. From there, we wanted to test how much the community and the company WildWorks was afraid of apparent fake threats. So around October 2020, we made a threat that we were going to "hack" Animal Jam on halloween, the community freaked and made a bunch of YouTube videos with WildWorks putting their servers on lockdown. It was the biggest lawl for us. <br>
-
+***
 Now that you understand the context before the main pwn; without further ado, let's get into the main pwn. On August 16, 2021, we discovered a 0day **no-auth** full account takeover on Animal Jam. How? simple. A fucking password reset endpoint. Let me repeat that, a fucking **password reset endpoint**, someone must've been some crack while writing the endpoint lol (╯°□°）╯︵ ┻━┻.
 ***
 
-***
