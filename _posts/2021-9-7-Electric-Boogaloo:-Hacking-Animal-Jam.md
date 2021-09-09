@@ -67,7 +67,6 @@ if __name__ == '__main__':
     main()
 ```
 and **PWNED**!! Now you can takeover anyones account just by supplying the username and a burner email lol. <br>
-<br>
 <a href="/img/Electric-Boogaloo:-Hacking-Animal-Jam/beamed.png" target="_blank"><img class="centerImgSmall" src="/img/Electric-Boogaloo:-Hacking-Animal-Jam/beamed.png"></a>
 
 Although it was patched due to the security advisory we released the next day because Animal Jam was having some issues making a patch lol, here's a gif & a image of us on the AJHQ account on the parents dashboard using this exploit.
