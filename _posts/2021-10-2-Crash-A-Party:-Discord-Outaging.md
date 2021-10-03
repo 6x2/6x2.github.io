@@ -14,4 +14,4 @@ excerpt_separator: <!--more-->
 # Preface
 As the title suggests, this post will touch on how a group of people exploited Discords gateway to cause server outage. <!--more--> <br>
 
-On May 5, 2020 a [video](https://www.youtube.com/watch?v=GA-tnZ8wlbY) was made by a user named "iLinked", basically a meme video of them exploiting Discord's gateway to cause a server outage.
+On May 5, 2020 a [video](https://www.youtube.com/watch?v=GA-tnZ8wlbY) was made by a user named "iLinked", basically the video was a "meme video of them exploiting Discord's gateway to cause a server outage with how to do the exploit.
