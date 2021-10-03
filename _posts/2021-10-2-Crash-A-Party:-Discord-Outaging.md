@@ -17,3 +17,5 @@ As the title suggests, this post will touch on how a group of people exploited D
 On May 5, 2020 a [video](https://www.youtube.com/watch?v=GA-tnZ8wlbY) was made by a user named "iLinked", basically the video was a "meme" video of them exploiting Discord's gateway to cause a server outage with how to do the exploit in the description.
 
 I will be breaking down the exploit iLinked put in the descrption on how it works for the people reading that aren't very knowledgeable with programming.
+
+<a href="/img/Crash-A-Party:-Discord-Outaging/w.png" target="_blank"><img class="centerImgMedium" src="/img/Crash-A-Party:-Discord-Outaging/w.png"></a>
