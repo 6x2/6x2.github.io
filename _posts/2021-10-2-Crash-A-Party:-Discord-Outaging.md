@@ -50,5 +50,6 @@ Now, going on the [Discord Developer Documentation](https://discord.com/develope
 The "d" section is a description. In the description, it has a guild_id: which is the servers id with the channels{} which inside the bracket contains the channel ids, essentially fetching all the online guild members in the guild channel(s), but the very **key part** is the `[0,-1]` that is very important because the gateway attempts to fetch -1 guild members and -1 guild members is not possible which is why this works, there is no error handling for this. <br>
 
 Here's some images I clipped from iLinkeds video for those that haven't clicked on the video. <br>
+
 <a href="/img/Crash-A-Party:-Discord-Outaging/a.png" target="_blank"><img class="centerImgMedium" src="/img/Crash-A-Party:-Discord-Outaging/a.png"></a>
 <a href="/img/Crash-A-Party:-Discord-Outaging/b.png" target="_blank"><img class="centerImgMedium" src="/img/Crash-A-Party:-Discord-Outaging/b.png"></a>
