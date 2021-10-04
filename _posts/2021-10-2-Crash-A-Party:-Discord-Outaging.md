@@ -25,6 +25,7 @@ So first, you start a websocket on `wss://gateway.discord.gg/?v=9&encoding=json`
 After creating a websocket connection, you send over identify packet (this tells the gateway what type of client we are and provides our authentication (token), without this, you cannot use the gateway & will be disconnected.) <br>
 
 After sending the identify packet, you can send over a heartbeat packet (this tells the gateway that you are still alive and have not lost connection, if we don't send this we will be automatically disconnected from the gateway.) <br>
+
 If you're confused, go ahead and read the Discord Developer Documentation on the [websocket gateway](https://discord.com/developers/docs/topics/gateway) which will explain it better on how to authenicate and connect to the gateway better than I can explain it. <br>
 
 Now that it's authenicated and connected to the Discord's websocket, you can send the custom payload iLinked put in the description: <br>
