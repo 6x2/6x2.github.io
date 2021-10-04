@@ -21,6 +21,8 @@ I will be breaking down the exploit iLinked put in the descrption on how it work
 <a href="/img/Crash-A-Party:-Discord-Outaging/w.png" target="_blank"><img class="centerImgMedium" src="/img/Crash-A-Party:-Discord-Outaging/w.png"></a> <br>
 
 So first, you start a websocket on `wss://gateway.discord.gg/?v=9&encoding=json` which is the current gateway on their 9th generation. <br>
+
 After creating a websocket connection, you send over identify packet (this tells the gateway what type of client we are and provides our authentication (token), without this, you cannot use the gateway & will be disconnected.) <br>
+
 After sending the identify packet, you can send over a heartbeat packet (this tells the gateway that you are still alive and have not lost connection, if we don't send this we will be automatically disconnected from the gateway.)
 
