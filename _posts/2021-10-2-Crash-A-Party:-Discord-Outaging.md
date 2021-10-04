@@ -49,6 +49,6 @@ So what is the op14? well firstly, ponder the question; what is a op? A op is a 
 Now, going on the [Discord Developer Documentation](https://discord.com/developers/docs/topics/opcodes-and-status-codes#gateway-opcodes) for operations code, I figured out it wasn't documented because it's a client based and the documentation is only for Discord bots, so I went to speak with multiple developers, I was able to gather that op14 basically gathers all online guild/servers members chunks and returns it. <br>
 The "d" section is a description. In the description, it has a guild_id: which is the servers id with the channels{} which inside the bracket contains the channel ids, essentially fetching all the online guild members in the guild channel(s), but the very **key part** is the `[0,-1]` that is very important because the gateway attempts to fetch -1 guild members and -1 guild members is not possible which is why this works, there is no error handling for this. <br>
 
-Here's some images I clipped from iLinkeds video for those that haven't clicked on the video.
+Here's some images I clipped from iLinkeds video for those that haven't clicked on the video. <br>
 <a href="/img/Crash-A-Party:-Discord-Outaging/a.png" target="_blank"><img class="centerImgMedium" src="/img/Crash-A-Party:-Discord-Outaging/a.png"></a>
 <a href="/img/Crash-A-Party:-Discord-Outaging/b.png" target="_blank"><img class="centerImgMedium" src="/img/Crash-A-Party:-Discord-Outaging/b.png"></a>
