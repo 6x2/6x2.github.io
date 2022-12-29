@@ -76,5 +76,4 @@ Although it was patched due to the security advisory we released the next day be
 
 ****
 # Conclusion
-This company "Animal Jam" is a example of greed over good security, if any companies are reading this, don't be like these guys, but hey,
-thank you for reading if you got this far, this is my first blog i've made and I'll be making more very soon and this was fun to make, if you enjoyed reading this, go ahead and share it (ﾟДﾟ)y─┛~~ #HackThePlanet #HTP #TrollThePlanet #TTP
+Animal Jam is an example of prioritizing greed over good security. If you are a company reading this, please do not follow their example. Thank you for reading this far. This is my first blog post and I will be making more soon. If you enjoyed reading this, please feel free to share it (ﾟДﾟ)y─┛~~
